@@ -44,6 +44,7 @@ T1593.002,Search Engines
 T1593.003,Code Repositories
 T1594,Search Victim-Owned Websites
 TA0042,Resource Development
+T1650,Acquire Access
 T1583,Acquire Infrastructure
 T1583.001,Domains
 T1583.002,DNS Server
@@ -52,6 +53,7 @@ T1583.004,Server
 T1583.005,Botnet
 T1583.006,Web Services
 T1583.007,Serverless
+T1583.008,Malvertising
 T1586,Compromise Accounts
 T1586.001,Social Media Accounts
 T1586.002,Email Accounts
@@ -108,6 +110,7 @@ T1078.002,Domain Accounts
 T1078.003,Local Accounts
 T1078.004,Cloud Accounts
 TA0002,Execution
+T1651,Cloud Administration Command
 T1059,Command and Scripting Interpreter
 T1059.001,PowerShell
 T1059.002,AppleScript
@@ -117,6 +120,7 @@ T1059.005,Visual Basic
 T1059.006,Python
 T1059.007,JavaScript
 T1059.008,Network Device CLI
+T1059.009,Cloud API
 T1609,Container Administration Command
 T1610,Deploy Container
 T1203,Exploitation for Client Execution
@@ -128,7 +132,6 @@ T1106,Native API
 T1053,Scheduled Task/Job
 T1053.002,At
 T1053.003,Cron
-T1053.004,Launchd
 T1053.005,Scheduled Task
 T1053.006,Systemd Timers
 T1053.007,Container Orchestration Job
@@ -223,6 +226,7 @@ T1556.004,Network Device Authentication
 T1556.005,Reversible Encryption
 T1556.006,Multi-Factor Authentication
 T1556.007,Hybrid Identity
+T1556.008,Network Provider DLL
 T1137,Office Application Startup
 T1137.001,Office Template Macros
 T1137.002,Office Test
@@ -239,7 +243,6 @@ T1542.005,TFTP Boot
 T1053,Scheduled Task/Job
 T1053.002,At
 T1053.003,Cron
-T1053.004,Launchd
 T1053.005,Scheduled Task
 T1053.006,Systemd Timers
 T1053.007,Container Orchestration Job
@@ -346,7 +349,6 @@ T1055.015,ListPlanting
 T1053,Scheduled Task/Job
 T1053.002,At
 T1053.003,Cron
-T1053.004,Launchd
 T1053.005,Scheduled Task
 T1053.006,Systemd Timers
 T1053.007,Container Orchestration Job
@@ -416,6 +418,7 @@ T1562.007,Disable or Modify Cloud Firewall
 T1562.008,Disable Cloud Logs
 T1562.009,Safe Mode Boot
 T1562.010,Downgrade Attack
+T1562.011,Spoof Security Alerting
 T1070,Indicator Removal
 T1070.001,Clear Windows Event Logs
 T1070.002,Clear Linux or Mac System Logs
@@ -435,6 +438,7 @@ T1036.004,Masquerade Task or Service
 T1036.005,Match Legitimate Name or Location
 T1036.006,Space after Filename
 T1036.007,Double File Extension
+T1036.008,Masquerade File Type
 T1556,Modify Authentication Process
 T1556.001,Domain Controller Authentication
 T1556.002,Password Filter DLL
@@ -443,6 +447,7 @@ T1556.004,Network Device Authentication
 T1556.005,Reversible Encryption
 T1556.006,Multi-Factor Authentication
 T1556.007,Hybrid Identity
+T1556.008,Network Provider DLL
 T1578,Modify Cloud Compute Infrastructure
 T1578.001,Create Snapshot
 T1578.002,Create Cloud Instance
@@ -464,6 +469,8 @@ T1027.006,HTML Smuggling
 T1027.007,Dynamic API Resolution
 T1027.008,Stripped Payloads
 T1027.009,Embedded Payloads
+T1027.010,Command Obfuscation
+T1027.011,Fileless Storage
 T1647,Plist File Modification
 T1542,Pre-OS Boot
 T1542.001,System Firmware
@@ -569,6 +576,7 @@ T1556.004,Network Device Authentication
 T1556.005,Reversible Encryption
 T1556.006,Multi-Factor Authentication
 T1556.007,Hybrid Identity
+T1556.008,Network Provider DLL
 T1111,Multi-Factor Authentication Interception
 T1621,Multi-Factor Authentication Request Generation
 T1040,Network Sniffing
@@ -597,6 +605,7 @@ T1552.004,Private Keys
 T1552.005,Cloud Instance Metadata API
 T1552.006,Group Policy Preferences
 T1552.007,Container API
+T1552.008,Chat Messages
 TA0007,Discovery
 T1087,Account Discovery
 T1087.001,Local Account
@@ -604,13 +613,14 @@ T1087.002,Domain Account
 T1087.003,Email Account
 T1087.004,Cloud Account
 T1010,Application Window Discovery
-T1217,Browser Bookmark Discovery
+T1217,Browser Information Discovery
 T1580,Cloud Infrastructure Discovery
 T1538,Cloud Service Dashboard
 T1526,Cloud Service Discovery
 T1619,Cloud Storage Object Discovery
 T1613,Container and Resource Discovery
 T1622,Debugger Evasion
+T1652,Device Driver Discovery
 T1482,Domain Trust Discovery
 T1083,File and Directory Discovery
 T1615,Group Policy Discovery
@@ -655,6 +665,7 @@ T1021.003,Distributed Component Object Model
 T1021.004,SSH
 T1021.005,VNC
 T1021.006,Windows Remote Management
+T1021.007,Cloud Services
 T1091,Replication Through Removable Media
 T1072,Software Deployment Tools
 T1080,Taint Shared Content
@@ -757,6 +768,7 @@ T1052.001,Exfiltration over USB
 T1567,Exfiltration Over Web Service
 T1567.001,Exfiltration to Code Repository
 T1567.002,Exfiltration to Cloud Storage
+T1567.003,Exfiltration to Text Storage Sites
 T1029,Scheduled Transfer
 T1537,Transfer Data to Cloud Account
 TA0040,Impact
@@ -980,6 +992,7 @@ TA0100,Collection
 T0830,Adversary-in-the-Middle
 T0802,Automated Collection
 T0811,Data from Information Repositories
+T0893,Data from Local System
 T0868,Detect Operating Mode
 T0877,I/O Image
 T0801,Monitor Process State
@@ -997,6 +1010,7 @@ T0878,Alarm Suppression
 T0803,Block Command Message
 T0804,Block Reporting Message
 T0805,Block Serial COM
+T0892,Change Credential
 T0809,Data Destruction
 T0814,Denial of Service
 T0816,Device Restart/Shutdown
